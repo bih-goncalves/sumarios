@@ -1,4 +1,3 @@
-app.controller('MainController', ['$scope', function($scope) {
-  
-  
-}]);
+app.controller('mainController', function($scope) {
+  $scope.files = [];
+  });
