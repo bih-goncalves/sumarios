@@ -1,0 +1,8 @@
+{
+  "name": "sumarios",
+  "wrap": "amd",
+  "constants": {
+    "HASH_API_BASE_URI": "https://sumarios.herokuapp.com/",
+    "WORD_API_BASE_URI": "http://word-api.ddns.net:8081"
+  }
+}

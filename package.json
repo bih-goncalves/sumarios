@@ -1,23 +1,37 @@
 {
   "name": "sumarios",
   "version": "1.0.0",
-  "description": "sumarios de livros",
-  "main": "module.js",
-  "dependencies": {
-    "bower": "^1.8.0"
-  },
-  "devDependencies": {},
+  "description": "Aplicativo para gerar sumários automaticamente",
+  "author": [
+    "Bianca Gonçalves <bih_goncalves@hotmail.com>"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "postinstall": "./node_modules/bower/bin/bower install"
+  },
+  "cacheDirectories": [
+    "node_modules",
+    "app/bower_components"
+  ],
+  "dependencies": {
+    "angular-moment": "^1.0.1",
+    "bower": "^1.8.0",
+    "express": "^4.13.4"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "gulp-bower": "0.0.13",
+    "gulp-ng-constant": "^1.1.0",
+    "gulp-watch": "^4.3.5"
+  },
+  "engines": {
+    "node": "0.12.x",
+    "npm": "3.3.x"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bih-goncalves/sumarios.git"
+    "url": "git@github.com:bih-goncalves/sumarios.git"
   },
-  "author": "Bianca Gonçalves",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/bih-goncalves/sumarios/issues"
-  },
-  "homepage": "https://github.com/bih-goncalves/sumarios#readme"
+  "license": "MIT"
 }
