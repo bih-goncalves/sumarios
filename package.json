@@ -1,0 +1,23 @@
+{
+  "name": "sumarios",
+  "version": "1.0.0",
+  "description": "sumarios de livros",
+  "main": "module.js",
+  "dependencies": {
+    "bower": "^1.8.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bih-goncalves/sumarios.git"
+  },
+  "author": "Bianca Gonçalves",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bih-goncalves/sumarios/issues"
+  },
+  "homepage": "https://github.com/bih-goncalves/sumarios#readme"
+}
