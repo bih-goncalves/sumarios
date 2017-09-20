@@ -8,18 +8,25 @@
 <link rel="icon" href="img/logo.jpg">
 <body>
 <script src="module.js"></script>
-<script src="controllers/main.js"></script>
-<script src="directives/fileListBind.js"></script>
+<script src="controllers/app.js"></script>
+<script src="directives/readFile.js"></script>
 
 <div ng-app="sumarios">
 <center><h2>Sumários de Livros</h2></center>
 
-<div ng-controller="mainController">
-  <input type="file" multiple name="files" filelist-bind/>
-  <br>
-  <ul><li ng-repeat="file in files">{{ file.name }}</li></ul>
+<div ng-controller="mainController" class="container">
+  <h1>Selecione o arquivo de texto:</h1>
+    <input type="file" on-read-file="readContent($fileContent)" />
+    <div ng-if="termos">
+    	<h4>Quantidade de termos encontrados: {{termos.length}}</h4>
+        <h3>Índice de termos:</h3>
+        <div ng-repeat="item in indice">
+        	<h5>{{item.name}}</h5>
+			<span ng-repeat="fonte in item.values">{{fonte}}<br></span>
+        	<br>
+        </div>
+    </div>
 </div>
-<section>Espaço para sumário de arquivo</section>
 
 </div>
 
